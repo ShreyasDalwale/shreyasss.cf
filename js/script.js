@@ -3,7 +3,7 @@
 function bfun(){
 	var dge =document.getElementById("demo");
 	document.getElementById('demo').style.color='cyan';
-	dge.innerHTML='HELLO WORLD';
+	dge.innerHTML='Insane-Ninja';
 
 }
 
