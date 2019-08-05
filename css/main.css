@@ -1,0 +1,93 @@
+@font-face {
+	font-family:"Ageone";
+	src:url("../font/Ageone.eot?") format("eot"),
+		url("../font/Ageone.woff") format("woff"),
+		url("../font/Ageone.ttf") format("truetype"),
+		url("../font/Ageone.svg#Ageone") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+body{
+	margin: 0;
+    background-image:url("../images/back.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+	color:white;
+	font-family: "Ageone";
+}
+
+.caption{
+    text-align: center;
+    margin:auto;
+    margin-top:25%;
+    margin-bottom: 25%;
+    top: 0;
+    letter-spacing: 4px;
+    background-color: rgba(0,0,0,0.5);
+    line-height: 50px;
+    font-size: 30px;
+      
+    position: sticky;
+}
+
+div.panel1{
+    //background-image: url("../images/image1.jpg");
+    background-color: rgba(255,255,255,1);
+    color: black;
+    background-attachment:;
+    margin-top: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+    font-size: 30px;
+    word-spacing: 5px;
+    
+}
+.logo{
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.top{
+	background-image: url("../images/back.jpg");
+	background-size: cover;
+	background-attachment: ;
+	background-repeat: no-repeat;
+	padding-top: 25%;
+	padding-bottom: 25%;
+}
+.buttons{
+	background-color: rgba(0,0,0,0.9);
+	text-decoration: none;
+	overflow: hidden;
+	padding: 10px;
+	color:white;
+	font-size: 18px;
+	line-height: ;
+	margin-left: ;
+	width: auto;
+	min-width: 10%;
+	display: inline-block;
+	border: 2px solid black;
+	border-radius: 5px;
+	text-align: center;
+}
+#buttons{
+	background-color: rgba(0,0,0,0.9);
+	text-decoration: none;
+	overflow: hidden;
+	padding: 10px;
+	color:white;
+	font-size: 18px;
+	line-height: ;
+	margin-left: ;
+	width: auto;
+	min-width: 10%;
+	display: inline-block;
+	border: 2px solid black;
+	border-radius: 5px;
+	text-align: center;
+}
