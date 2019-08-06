@@ -18,11 +18,13 @@ body{
 	color:white;
 	font-family: "Ageone";
 }
-
+.caption,div,p,h1,.logo,.top,.button,.buttons{
+	font-family:ageone;
+}
 .caption{
     text-align: center;
 	margin:auto;
-	color: cyan;
+	color: white;
     margin-top:25%;
     margin-bottom: 25%;
 	top: 0;
