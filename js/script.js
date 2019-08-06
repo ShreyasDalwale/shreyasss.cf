@@ -1,11 +1,20 @@
-
+var intoggle = 0;
 
 function bfun(){
 	var dge =document.getElementById("demo");
-	document.getElementById('demo').style.color='cyan';
-	dge.innerHTML='Insane-Ninja';
+	// document.getElementById('demo').style.color='cyan';
+	// dge.innerHTML='Insane-Ninja';
 
+	if (intoggle == 0){
+		document.getElementById("buttdiv").style.display="";
+		intoggle=1;
+	}
+	else if(intoggle == 1){
+		document.getElementById("buttdiv").style.display="none";
+		intoggle=0;
+	}
 }
+
 
 function headlines(x){
 

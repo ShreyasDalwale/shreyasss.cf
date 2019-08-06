@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>I-News</title>
+		<title>Insane-Ninja</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        
+        <!-- Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- End -->
 	</head>
 	<body>
-		<!--<div class="top">-->
             <div class="caption">
                 Insane-Ninja
-           <!-- </div>-->
-        </div>    
+            </div>    
         <div class="panel1">
-            News from all Over the World.
+            Just some random stuff I've been working on.
             <br><br><br>
-            <!-- <img class="logo" src="https://icon-locator.herokuapp.com/icon?url=http://www.abc.net.au/news&size=70..120..200"> -->
-        	<button id="demo1" class="buttons" type="button" onclick="bfun()">Insane</button>
-        	<button id="demo" class="buttons">Ninja</button>
-
+            <button id="demo1" class="button" type="button" onclick="bfun()">Insane-Ninja</button>
+            <div id="buttdiv" class="buttdiv" style="display: none;transition-duration: 1000ms;">
+        	    <button id="demo" class="buttons">Ninja</button>
+        	    <button id="demo" class="buttons">Ninja</button>
+        	    <button id="demo" class="buttons">Ninja</button>
+        	    <button id="demo" class="buttons">Ninja</button>
+            </div>
         </div>
 
         <div onclick="headlines(this)" style="padding-bottom: 500%;  background-color: rgba(0,0,0,0.5);width: 40%;margin:auto;display:block;text-align: center;padding: 50px">Headlines</div>
         
-        <!-- <div style="padding-bottom: 500%;background-color: rgba(0,0,0,0.5);width: 40%;margin-right: 0px;display: inline-block;"></div> -->
 
 	</body>
 </html>
