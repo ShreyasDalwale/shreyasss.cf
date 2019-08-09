@@ -31,12 +31,22 @@ body {
 	margin-top: 50px;
     display: inline-block;
 }
+.animage{
+    width: 45px;
+    height: 45px;
+    position: fixed;;
+    top: 2px;
+    left:8px;
+    background-color: seagreen;
+    border-radius: 8px;
+}
 .button{
     position: fixed;
     top:95%;
     left:7.5%; ;
     width: 50px;
     text-align: center;
+    display: inherit;
     border-radius: 5px;
     background-color: rgba(60, 179, 113,1);
     
@@ -45,7 +55,11 @@ body {
     color: white;
     text-decoration: none;
 }
-
+body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+}
 div.body{
 /*	display: inline-block;*/
     margin-top: 50px;
@@ -60,6 +74,7 @@ div.body{
     height: 450px;
     overflow: hidden;
     width: 325px;
+    background-color: white;
 /*    background-image: url("https://www.holidify.com/images/tooltipImages/MUNNAR.jpg");*/
     margin: 25px;
     padding: 0px;
@@ -91,6 +106,7 @@ div.sidebar{
     border:none;
 	top: 100px;
     height: 80%;
+    display: inherit;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 	width: 18%;
@@ -100,6 +116,7 @@ div.sidebar{
 
 div.container{
 	padding: 25px;
+    display: inherit;
 }
 input.themes {
     padding: 100px;

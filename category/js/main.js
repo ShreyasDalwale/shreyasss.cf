@@ -40,6 +40,7 @@ var collection = {
 			}
           ]
 };
+var mmtog =1;
 var myJSON = JSON.stringify(collection);
 var txt = '{"name":"John","some":[{"one":"valueone"},{"two":"valuetwo"}], "age":30, "city":"New York"}'
 var obj2= JSON.parse(myJSON);
@@ -49,6 +50,28 @@ function fun(){
 document.getElementsByClassName("head")[0].innerHTML = obj.name + ", " + obj.age +"<br>"+ obj2.nal[0].name+"<br>"+obj2.nal[2].link;
 
 
+}
+window.mmtoggle = function(){
+    var xy = document.getElementById("elementmm");
+    var aniMage = document.getElementsByClassName("animage");
+    var bodyClass = document.getElementsByClassName("body");
+    if (mmtog==0) {
+        xy.style.display ="none";
+        mmtog=1;
+        bodyClass[0].style.marginLeft="13%";
+        aniMage[0].style.display="";
+        // bodyClass[0].style.margin="0px";
+        // alert(mmtog);
+    }
+    else if(mmtog==1){
+        xy.style.display="";
+        mmtog=0;
+        aniMage[0].style.display="none";
+        bodyClass[0].style.marginLeft="";
+        bodyClass[0].style.margin=""; 
+        // alert(mmtog);
+
+    }
 }
 window.load = function(){
     var i,it;
@@ -67,7 +90,9 @@ window.load = function(){
         if(it==5){it=0;}
 //        i2++;
     }
+    mmtoggle();
 }
+
 window.sort = function(){
     var chkbox = document.getElementsByClassName("themes");
     var i=0;

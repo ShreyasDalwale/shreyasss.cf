@@ -15,37 +15,46 @@
 		<!-- End -->
     
 </head>
-<body onload="load()">
+
+<body onload="load();mmtoggle()" style="background-image: url(res/1.jpg)">
     <div class="head" >
-        Locations Category
+        Locations Gallery
     </div>  
-	<div class="sidebar">
-		<div class="container">
-            
-            <p style="text-align:   ">Themes</p><hr>
-            <input type="checkbox" name="thm1" value="Adventure" class="themes">Adventure<br>
-            <input type="checkbox" name="thm2" value="Heritage" class="themes"> Heritage<br>
-            <input type="checkbox" name="thm3" value="Honeymoon"class="themes"> Honeymoon<br>
-            <input type="checkbox" name="thm4" value="Beaches" class="themes"> Beaches<br>
-            <input type="checkbox" name="thm5" value="Nature" class="themes"> Nature<br>
-            <input type="checkbox" name="thm6" value="Trekking" class="themes"> Trekking<br>
-            <input type="checkbox" name="thm7" value="Wild Life" class="themes"> Wild Life<br>
-            <input type="checkbox" name="thm8" value="Deserts" class="themes"> Deserts<br>
-            <input type="checkbox" name="thm9" value="Water Activities" class="themes"> Water Activities<hr><br>
 
-            <p>Season</p><hr>
-            <input type="checkbox" value="summer" class="themes">Summer<br>
-            <input type="checkbox" value="winter" class="themes">Winter<br>
-            <input type="checkbox" value="autumn" class="themes">Autumn<br>
-            <input type="checkbox" value="monsoon" class="themes">Monsoon<br>
-
+    <div id="elementmm">
+    	<div class="sidebar">
+    		
             
-		</div>
-	</div>
+            <div class="container">
+                
+                <p style="">Themes</p><hr>
+                <input type="checkbox" name="thm1" value="Adventure" class="themes">Adventure<br>
+                <input type="checkbox" name="thm2" value="Heritage" class="themes"> Heritage<br>
+                <input type="checkbox" name="thm3" value="Honeymoon"class="themes"> Honeymoon<br>
+                <input type="checkbox" name="thm4" value="Beaches" class="themes"> Beaches<br>
+                <input type="checkbox" name="thm5" value="Nature" class="themes"> Nature<br>
+                <input type="checkbox" name="thm6" value="Trekking" class="themes"> Trekking<br>
+                <input type="checkbox" name="thm7" value="Wild Life" class="themes"> Wild Life<br>
+                <input type="checkbox" name="thm8" value="Deserts" class="themes"> Deserts<br>
+                <input type="checkbox" name="thm9" value="Water Activities" class="themes"> Water Activities<hr><br>
+
+                <p>Season</p><hr>
+                <input type="checkbox" value="summer" class="themes">Summer<br>
+                <input type="checkbox" value="winter" class="themes">Winter<br>
+                <input type="checkbox" value="autumn" class="themes">Autumn<br>
+                <input type="checkbox" value="monsoon" class="themes">Monsoon<br>
+
+                
+    		</div>
+            
+                <img src="res\clear.ico" height="30px" width="30px" style="position: fixed;left: 16%;top: 14%" onclick="mmtoggle()">
+    	</div>
+        
         <button class="button" type="button" onclick="sort()">
             Sort
         </button>
     
+    </div>    
     <div class="body">
         
         <div class="ib" style="display: none"></div>
@@ -65,6 +74,11 @@
         <div class="ib" style="display: none"></div>
 
     </div>
+    <div class="animage" onclick="mmtoggle()">        
+        <div style="background-color: white;height: 2px;width: 60%;margin-left:8px;border-radius: 4px;margin-top: 10px"></div>
+        <div style="background-color: white;height: 2px;width: 60%;margin-left:8px;border-radius: 4px;margin-top:10px;"></div>
+        <div style="background-color: white;height: 2px;width: 60%;margin-left:8px;border-radius: 4px;margin-top:10px;"></div>
 
+    </div>
 </body>
 </html>
