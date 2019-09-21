@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insane-Ninja</title>
+	<style type="text/css">
+		body{
+			margin: 0%;
+		}
+		.insaneNinja{
+			padding: 50px;
+			display: inline-block;
+			width: 100%;
+			height: 400px;
+			position: fixed;
+			background-size:cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+		.insaneButtons{
+			height: 70px;
+			width: 50px;
+			background-color: rgba(0,0,0,0.6);
+			color: white;
+			position: fixed;
+			z-index: 100;
+			border:none;
+		}
+		.insaneButtons:hover{
+			background-color: rgba(255,255,255,0.6);
+			color: black;
+		}
+		#previousButton{
+			margin-top: 250px;
+			left:0;
+		}
+		#nextButton{
+			margin-top: 250px;
+			right: 0;
+		}
+		#one{
+			background-image: url("img/1.jpg");
+			z-index: 10;
+		}
+		#two{
+			background-image: url("img/2.jpg");
+			z-index: 9;
+		}
+		#three{
+			background-image: url("img/3.jpg");
+			z-index: 8;
+		}
+		#four{
+			background-image: url("img/4.jpg");
+			z-index: 7;
+		}
+		#five{
+			background-image: url("img/5.jpg");
+			z-index: 6;
+		}
+		h3{
+			text-align: center;
+			line-height: 50px;
+			color: black;
+			position:absolute;
+			bottom: 10%;
+			margin-left: 45%;
+		}
+	</style>
+	<script type="text/javascript">
+		var slideShowDivs = document.getElementsByClassName("insaneNinja");
+		var slideIndex = parseInt(1);
+		var i = parseInt(0);
+		function next() {
+			if(slideIndex<slideShowDivs.length){
+			// if(slideIndex > 5){
+				// for (var i = 0; i < slideShowDivs; i++) {
+					// slideShowDivs[i].style.display="";
+				// }
+
+			// slideIndex==1;
+			
+			console.log(slideShowDivs);
+			for(var i=0;i<slideShowDivs.length;i++){
+				if(i==slideIndex+1)
+					slideShowDivs[slideIndex].style.display="";
+				else
+				slideShowDivs[slideIndex-1].style.display="none";
+			}
+			slideIndex=slideIndex+1;
+			}
+		}
+
+		function previous(){
+			if (slideIndex>1) {
+				console.log(slideIndex);
+				slideShowDivs[slideIndex-1].style.display="none";
+				slideShowDivs[slideIndex-2].style.display="inline-block";
+				slideIndex=slideIndex-1;
+			}
+				if(slideIndex==1){
+					console.log("hello");
+					for(var i=0;i<slideShowDivs.length+1;i++){
+						slideShowDivs[i].style.display="inline-block";
+					}
+				}
+		}
+	</script>
+</head>
+
+<body onload="loadEle()">
+	<button class="insaneButtons" id="previousButton" onclick="previous()"><</button>
+	<button class="insaneButtons" id="nextButton" onclick="next()">></button>
+	<div class="insaneNinja" id="one"></div>
+	<div class="insaneNinja" id="two"></div>
+	<div class="insaneNinja" id="three"></div>
+	<div class="insaneNinja" id="four"></div>
+	<div class="insaneNinja" id="five"></div>
+		<h3>Insane-Ninja</h3>
+</body>
+</html>
