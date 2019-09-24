@@ -57,6 +57,10 @@ div.panel1{
 	border: 1px solid black;
 	border-radius: 50%;
 }
+a{
+	color: white;
+	text-decoration: none;
+}
 .top{
 	background-image: url("../images/back.jpg");
 	background-size: cover;
@@ -116,7 +120,7 @@ div.panel1{
     font-size: 17.5px;
     word-spacing: 5px;
 	}
-	.buttons{
-		font-size: 12px;
+	.buttons,.button{
+		font-size: 16px;
 	}
 }
