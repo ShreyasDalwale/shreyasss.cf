@@ -64,7 +64,7 @@ a{
 .top{
 	background-image: url("../images/back.jpg");
 	background-size: cover;
-	background-attachment: ;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	padding-top: 25%;
 	padding-bottom: 25%;
